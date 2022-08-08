@@ -27,7 +27,7 @@ public class Categoria {
 	private String titulo;
 	
 	@NotNull
-	@Size (min = 5, max = 30)
+	@Size (min = 5, max = 255)
 	private String descricao;
 	
 	@OneToMany(mappedBy= "categoria", cascade= CascadeType.ALL)
